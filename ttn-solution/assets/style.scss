@@ -1,0 +1,894 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+$max-width: 1250px;
+
+$pink: #EA0078;
+
+
+@mixin border-bottom($top, $bottom, $left, $right) {
+    &::after{
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid $pink;
+        width: 65px;
+        top: $top;
+        bottom: $bottom;
+        left: $left;
+        right: $right;
+    }
+}
+
+button{
+    color: #fff;
+    background: $pink;
+    border-radius: 0;
+    font-size: 18px;
+    &:hover{
+        color: #fff;
+    }
+}
+
+//---header-------------
+
+header{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    .container{
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        nav{
+            padding: 0;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            .nav-link{
+                color: #fff;
+            }
+        }
+        button{
+           @extend button;
+          
+        }
+    }
+}
+
+
+//----banner--------------
+
+.topexperts-form{
+    padding: 120px 0 90px;
+    background: url("images/Top_Banner_Image.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .container{
+        .services{
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px 40px 20px;
+            box-shadow: 2px 2px 8px #888888;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -50px;
+            background: #fff;
+        }
+
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        h1{
+            color: #fff;
+            font-size: 40px;
+            padding: 0;
+        }
+        form{
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            p{
+                font-size: 26px;
+            }
+            input{
+                background: transparent;
+                color: #fff;    
+                &::placeholder{
+                    color: #fff;
+                    font-size: 13px;
+                }
+                border-radius: 0;
+            }
+            textarea{
+                background: transparent;
+                color: #fff;
+                border-radius: 0; 
+                font-size: 13px;
+                resize: none;
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+            button{
+                @extend button;
+                background: transparent;
+                padding: 6px 0;
+                display: block;
+                margin: 0 auto;
+                border: 1px solid #fff;
+                width: 300px;
+            }
+        }
+    }
+}
+
+//-----card experience-------------------
+
+
+.card-experience{
+    margin-top: 90px;
+    padding-bottom: 30px;
+    max-width: 1000px;
+    width: 100%;
+    .card{
+        border: none;
+        img{
+            width: 60%;
+            margin: auto;
+        }
+        .card-detail{
+            text-align: center;
+        }
+    }
+}
+
+
+//------success stories-----------
+
+
+.success-stories 
+{
+    margin-bottom:20px;
+    background-color: #F6F4F1;
+    padding: 25px 0;
+    .success-stories-heading
+    {
+        // @include heading(#41495a, 42px, 400);
+        padding-bottom: 10px;
+        margin-bottom:20px;
+    
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 4px solid $pink;
+
+        }
+    }
+
+    .container
+    {
+        max-width: $max-width;
+        width:100%;
+    }
+
+    .carousel-indicators
+    { .licolor
+        {
+        background-color: $pink;
+        }
+    }
+
+    .row
+    {
+       padding:10px;
+    }
+
+    .firstcolumn
+    {
+        text-align: left;
+        h1{ font-weight: 800;}
+        .subpara{ font-size:30px;}
+        h3{font-weight: 600;}
+        .para{ text-align: justify; }
+    }
+
+    .arrow{
+        // background-color: $pink;
+        width: 1%;
+        .arrowcolor
+        {
+            background-color: $pink;
+        }
+
+    }
+
+
+
+}
+
+
+
+//----our client-------------
+
+.our-clients{
+    margin: 0 auto;
+    padding: 10px;
+    h2{
+        position: relative; 
+        margin: 0 auto;
+        @include border-bottom(20px,0,60px,0);
+        padding: 12px;
+    }
+    .clients-logo{
+        text-align: center;
+        img{
+            width: 170px;
+            height: 100px;
+        }
+    }
+}   
+
+
+//----our react js Experience, Expertise and Practices----
+
+.expertise{
+    background: url("images/expertise-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0 20px;
+    h2{
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 45px;
+        @include border-bottom(0,-7px,268px,0);
+    }
+    p{
+        padding-top: 36px;
+        font-size: 21px;
+    }
+    ul{
+        li{
+            list-style: none;
+            padding-top: 6px;
+            &:before{
+                content: "\003e";
+                color: $pink;
+                font-weight: bold;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .expertise-content{
+        padding-top: 30px;
+        display: flex;
+        text-align: left;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        img{
+            margin-right: 6px;
+        }
+        .left-content{
+            width: 50%;
+        }
+        .right-content{
+           width: 48%;
+           display: flex;
+           justify-content: flex-end;
+        }
+    }
+}
+
+//----Our Engineering Practices /Our Agile Practices-
+
+.practices{
+    padding: 40px 0;
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    ul{
+        li{
+            list-style: none;
+            padding-top: 30px;
+            font-size: 20px;
+            img{
+                padding-right: 20px;
+                width: 58px;
+                height: 30px;
+            }
+        }
+    }
+
+    .engineering{
+        h2{
+            position: relative;
+            font-size: 37px;
+            @include border-bottom(0,-10px,3px,0);
+        }
+    }
+    .agile{
+        padding-left: 55px;
+        h2{
+            position: relative;
+            font-size: 37px;
+            @include border-bottom(0,-10px,4px,0);
+        }
+    }
+}
+
+//---- Looking ReactJS Consulting? ------
+
+.looking-react{
+    background: url("images/talk-bg.jpg");
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    h2{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    button{
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 0;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 34px 10px;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+//----testimonials------
+
+.testimonials{
+    padding: 40px;
+    h2{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        @include border-bottom(0,20px,566px,0);
+        padding-bottom: 26px;
+    }
+
+    iframe{
+        border: none;
+        margin-top: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .testimonials-pic{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        .testimonial-outer{
+            display: flex;
+            align-items: center;
+            .card1{
+                width: 160px;
+            }
+            img{
+                border-radius: 50%;
+                border: 4px solid #D9DEDD;
+                width: 65px;
+                height: 65px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+
+//--- Our Expertise on React.js -----
+
+.our-reactjs{
+    width: 100%;
+    padding: 40px 0;
+    background: #F6F4F0;
+    .container{
+        max-width: $max-width;
+        font-size: 14px;
+        text-align: justify;
+        h2{
+            text-align: center;
+            font-size: 25px;
+        }
+        p{
+            padding-top: 20px;
+        }
+    }
+}
+
+
+//---- We are keen to know your requirements.------
+.requirements
+{
+    background: url("images/form-bg.jpg");
+    padding: 50px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: relative;
+}
+
+
+.expert-form{
+  
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    
+    .container{
+        max-width: 1000px;
+        width: 100%;
+        .form1{
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 40px;
+            input{
+                border-radius: 0;
+            }
+            textarea{
+                resize: none;
+                border-radius: 0;
+                padding: 17px 12px 10px;
+            }
+            button{
+                @extend button;
+                max-width: 414px;
+                width: 100%;
+                font-size: 26px;
+                padding: 12px 0;
+            }
+        }
+        h2{
+            position: relative;
+            font-size: 42px;
+            @include border-bottom(0,-10px,452px,0);
+        }
+    }
+    
+}
+
+
+//-----footer-----
+
+
+footer{
+    background: #59595C;
+    width: 100%;
+    padding: 30px 0 10px;
+    color: #fff;
+    font-size: 12px;
+    .container{
+        max-width: $max-width;
+        display: flex;
+        justify-content: space-between;  
+        .footer-content{
+            p{
+                max-width: 600px;
+                width: 100%;
+                line-height: 0.8;
+            }
+        }
+        .logo-ttn{
+            display: flex;
+            img{
+                width: 100px;
+                height: 50px;
+            }
+            .footer-content{
+                padding-left: 10px;
+                padding-top: 16px;
+                text-align: right;  
+            }
+            p{
+                line-height: 0.4
+            }
+        }
+    }
+}
+
+
+
+//------media query for 768-1024------------
+
+@media (min-width: 768px) and (max-width: 1024px){
+    $max-width1: 768px;
+    header{
+        .container{
+            max-width: 768px;
+            width: 100%;
+            .navbar-nav{
+              flex-direction: row;
+              .nav-link{
+                padding-left: 15px;
+              }
+            }
+        }
+    }
+
+    .topexperts-form{
+        .container{
+            h1{
+                font-size: 35px;
+            }
+        }
+    }
+
+    .testimonials{
+        h2{
+            @include border-bottom(0,13px,305px,0);
+        }
+        iframe{
+            max-width: $max-width1;
+            width: 100%;
+        }
+        .testimonials-pic{
+            .testimonial-outer{
+                .card1{
+                    width: 125px;
+                }
+                img{
+                    border-radius: 50%;
+                    border: 4px solid #D9DEDD;
+                    width: 65px;
+                    height: 65px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .our-clients{
+        h2{
+            @include border-bottom(0,0,60px,0);
+        }
+    }   
+    
+
+    .expertise{
+        h2{
+            @include border-bottom(0,-7px,271px,0);
+        }
+
+        ul{
+            li{
+                list-style: none;
+                padding-top: 6px;
+                font-size: 18px;
+                display: flex;
+            }
+        }
+    }
+
+    .practices{
+        padding: 40px 0 40px;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+        ul{
+            padding: 0;
+            li{
+                font-size: 13px;
+                display: flex;
+                img{
+                    width: 58px;
+                    height: 30px;
+                }
+            }
+        }
+        .engineering{
+            h2{
+                font-size: 25px;
+                @include border-bottom(0,-7px,0,0);
+            }
+        }
+
+        .agile{
+            h2{
+                font-size: 25px;
+                @include border-bottom(0,-7px,0,0);
+            }
+        }
+    }
+
+    .expert-form{
+        .container{
+            h2{
+                @include border-bottom(0,-10px,292px,0);
+            }
+        }
+    }
+}
+
+
+
+//------media query for 320-767------------
+
+
+@media (min-width: 320px) and (max-width: 767px){
+    $max-width1: 768px;
+
+    header{
+        .container{
+            max-width: 768px;
+            width: 100%;
+            nav{
+                ul{
+                    li{
+                        border-bottom: 1px solid #fff;
+                        text-align: center;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        &:nth-child(4){
+                            padding-top: 20px; 
+                        }
+                        button{
+                            font-size: 15px;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .secondcloumn-img
+    {
+       
+    }
+
+
+
+    .testimonials{
+        iframe{
+            max-width: $max-width1;
+            width: 100%;
+        }
+    }
+
+    .our-clients{
+        h2{
+            @include border-bottom(0,0,61px,0);
+        }
+    }   
+    
+
+    .expertise{
+        h2{
+            @include border-bottom(0,-13px,112px,0);
+            font-size: 23px;
+        }
+
+        ul{
+            padding-left: 0;
+            li{
+                font-size: 16px;
+                display: flex;
+            }
+        }
+
+        .expertise-content{
+            padding: 20px;
+            display: block;
+            text-align: left;
+            max-width: 1000px;
+            width: 100%;
+            font-size: 20px;
+            .left-content{
+                width: 100%;
+            }
+            .right-content{
+               width: 100%
+            }
+        }
+    }
+
+    .practices{
+        padding: 40px 0 40px;
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+        .engineering{
+            h2{
+                font-size: 20px;
+                text-align: center;
+                @include border-bottom(0,-9px,29px,0);
+            }
+        }
+
+        .agile{
+            margin-top: 16px;
+            padding-left: 15px;
+            h2{
+                font-size: 20px;
+                padding-left: 30px;
+                @include border-bottom(0,-9px, 29px,0);
+            }
+        }
+    }
+
+    .expert-form{
+        padding: 20px 0;
+        .container{
+            .form1{  
+                width: 100%;
+                input{
+                    font-size: 14px;
+                }
+                textarea{
+                    resize: none;
+                    border-radius: 0;
+                    padding: 0;
+                    height: 100px;
+                    font-size: 14px;
+                    &::placeholder{
+                        padding: 10px 10px 30px;
+                    }
+                }
+                button{
+                    max-width: 300px;
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+            h2{
+                font-size: 25px;
+                @include border-bottom(0,-18px,103px,0);
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        padding: 30px 0 10px;
+        color: #fff;
+        font-size: 12px;
+        .container{
+            max-width: $max-width;
+            display: block;  
+            .footer-content{
+                margin-bottom: 20px;
+                p{
+                    max-width: 150px;
+                    width: 100%;
+                    line-height: 1.5;
+                    text-align: center;
+                    margin: 10px auto;
+                }
+            }
+            .logo-ttn{
+                display: flex;
+                
+                img{
+                    width: 100px;
+                    height: 50px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                .footer-content{
+                    padding-left: 10px;
+                    padding-top: 16px;
+                    text-align: right;  
+                }
+                p{
+                    line-height: 0.4
+                }
+            }
+        }
+    }
+
+    .topexperts-form{
+       
+        .container{
+            h1{
+                font-size: 23px;
+                text-align: center;
+            }
+            .services{
+                img{
+                    width: 88px;
+                    height: 50px;
+                    padding-right: 15px;
+                }
+            }
+            form{
+                button{
+                    background: transparent;
+                    padding: 6px 0;
+                    display: block;
+                    margin: 0 auto;
+                    border: 1px solid #fff;
+                    width: 290px;
+                }
+                p{
+                    color: #4475cf;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .talk{
+        background-image: url("images/talk-bg.jpg");
+        h2{
+            font-size: 27px;
+            padding-bottom: 30px;
+        }
+        button{
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 0;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 0 10px;
+            width: 220px;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    .testimonials{
+        h2{
+            font-size: 30px;
+            @include border-bottom(0,19px,82px,0);
+        }
+    
+        iframe{
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;   
+            height: 200px;
+            width: 100%;
+        }
+
+        .testimonials-pic{
+            flex-direction: column;
+            img{
+                border-radius: 50%;
+                border: 4px solid #D9DEDD;
+                width: 60px;
+                height: 60px;
+            }
+            .testimonial-outer{
+                padding-top: 10px;
+            }
+        }
+    }
+}

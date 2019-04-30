@@ -1,0 +1,704 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+button, header .container button, .topexperts-form .container form button, .expert-form .container .form1 button {
+  color: #fff;
+  background: #EA0078;
+  border-radius: 0;
+  font-size: 18px; }
+  button:hover, header .container button:hover, .topexperts-form .container form button:hover, .expert-form .container .form1 button:hover {
+    color: #fff; }
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
+  z-index: 2;
+  position: fixed;
+  width: 100%; }
+  header .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%; }
+    header .container nav {
+      padding: 0; }
+    header .container .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+      header .container .navbar-nav .nav-link {
+        color: #fff; }
+
+.topexperts-form {
+  padding: 120px 0 90px;
+  background: url("images/Top_Banner_Image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .topexperts-form .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%; }
+    .topexperts-form .container .services {
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px 40px 20px;
+      box-shadow: 2px 2px 8px #888888;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -50px;
+      background: #fff; }
+    .topexperts-form .container h1 {
+      color: #fff;
+      font-size: 40px;
+      padding: 0; }
+    .topexperts-form .container form {
+      color: #fff;
+      text-align: center;
+      padding: 0; }
+      .topexperts-form .container form p {
+        font-size: 26px; }
+      .topexperts-form .container form input {
+        background: transparent;
+        color: #fff;
+        border-radius: 0; }
+        .topexperts-form .container form input::placeholder {
+          color: #fff;
+          font-size: 13px; }
+      .topexperts-form .container form textarea {
+        background: transparent;
+        color: #fff;
+        border-radius: 0;
+        font-size: 13px;
+        resize: none; }
+        .topexperts-form .container form textarea::placeholder {
+          color: #fff; }
+      .topexperts-form .container form button, .topexperts-form .expert-form .container form .form1 button, .expert-form .topexperts-form .container form .form1 button, .topexperts-form .expert-form .container .form1 form button, .expert-form .topexperts-form .container .form1 form button {
+        background: transparent;
+        padding: 6px 0;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        width: 300px; }
+
+.card-experience {
+  margin-top: 90px;
+  padding-bottom: 30px;
+  max-width: 1000px;
+  width: 100%; }
+  .card-experience .card {
+    border: none; }
+    .card-experience .card img {
+      width: 60%;
+      margin: auto; }
+    .card-experience .card .card-detail {
+      text-align: center; }
+
+.success-stories {
+  margin-bottom: 20px;
+  background-color: #F6F4F1;
+  padding: 25px 0; }
+  .success-stories .success-stories-heading {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative; }
+    .success-stories .success-stories-heading:after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 4px solid #EA0078; }
+  .success-stories .container {
+    max-width: 1250px;
+    width: 100%; }
+  .success-stories .carousel-indicators .licolor {
+    background-color: #EA0078; }
+  .success-stories .row {
+    padding: 10px; }
+  .success-stories .firstcolumn {
+    text-align: left; }
+    .success-stories .firstcolumn h1 {
+      font-weight: 800; }
+    .success-stories .firstcolumn .subpara {
+      font-size: 30px; }
+    .success-stories .firstcolumn h3 {
+      font-weight: 600; }
+    .success-stories .firstcolumn .para {
+      text-align: justify; }
+  .success-stories .arrow {
+    width: 1%; }
+    .success-stories .arrow .arrowcolor {
+      background-color: #EA0078; }
+
+.our-clients {
+  margin: 0 auto;
+  padding: 10px; }
+  .our-clients h2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 12px; }
+    .our-clients h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 20px;
+      bottom: 0;
+      left: 60px;
+      right: 0; }
+  .our-clients .clients-logo {
+    text-align: center; }
+    .our-clients .clients-logo img {
+      width: 170px;
+      height: 100px; }
+
+.expertise {
+  background: url("images/expertise-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0 20px; }
+  .expertise h2 {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 45px; }
+    .expertise h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 0;
+      bottom: -7px;
+      left: 268px;
+      right: 0; }
+  .expertise p {
+    padding-top: 36px;
+    font-size: 21px; }
+  .expertise ul li {
+    list-style: none;
+    padding-top: 6px; }
+    .expertise ul li:before {
+      content: "\003e";
+      color: #EA0078;
+      font-weight: bold;
+      padding-right: 10px; }
+  .expertise .expertise-content {
+    padding-top: 30px;
+    display: flex;
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px; }
+    .expertise .expertise-content img {
+      margin-right: 6px; }
+    .expertise .expertise-content .left-content {
+      width: 50%; }
+    .expertise .expertise-content .right-content {
+      width: 48%;
+      display: flex;
+      justify-content: flex-end; }
+
+.practices {
+  padding: 40px 0;
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto; }
+  .practices ul li {
+    list-style: none;
+    padding-top: 30px;
+    font-size: 20px; }
+    .practices ul li img {
+      padding-right: 20px;
+      width: 58px;
+      height: 30px; }
+  .practices .engineering h2 {
+    position: relative;
+    font-size: 37px; }
+    .practices .engineering h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 0;
+      bottom: -10px;
+      left: 3px;
+      right: 0; }
+  .practices .agile {
+    padding-left: 55px; }
+    .practices .agile h2 {
+      position: relative;
+      font-size: 37px; }
+      .practices .agile h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -10px;
+        left: 4px;
+        right: 0; }
+
+.looking-react {
+  background: url("images/talk-bg.jpg");
+  text-align: center;
+  padding: 50px;
+  color: #fff; }
+  .looking-react h2 {
+    font-size: 40px;
+    padding-bottom: 30px; }
+  .looking-react button, .looking-react header .container button, header .container .looking-react button, .looking-react .topexperts-form .container form button, .topexperts-form .container form .looking-react button, .looking-react .expert-form .container .form1 button, .expert-form .container .form1 .looking-react button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 34px 10px; }
+    .looking-react button:hover, .looking-react .topexperts-form .container form button:hover, .topexperts-form .container form .looking-react button:hover, .looking-react .expert-form .container .form1 button:hover, .expert-form .container .form1 .looking-react button:hover {
+      color: #fff; }
+
+.testimonials {
+  padding: 40px; }
+  .testimonials h2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 26px; }
+    .testimonials h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 0;
+      bottom: 20px;
+      left: 566px;
+      right: 0; }
+  .testimonials iframe {
+    border: none;
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto; }
+  .testimonials .testimonials-pic {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; }
+    .testimonials .testimonials-pic .testimonial-outer {
+      display: flex;
+      align-items: center; }
+      .testimonials .testimonials-pic .testimonial-outer .card1 {
+        width: 160px; }
+      .testimonials .testimonials-pic .testimonial-outer img {
+        border-radius: 50%;
+        border: 4px solid #D9DEDD;
+        width: 65px;
+        height: 65px;
+        margin-right: 15px; }
+
+.our-reactjs {
+  width: 100%;
+  padding: 40px 0;
+  background: #F6F4F0; }
+  .our-reactjs .container {
+    max-width: 1250px;
+    font-size: 14px;
+    text-align: justify; }
+    .our-reactjs .container h2 {
+      text-align: center;
+      font-size: 25px; }
+    .our-reactjs .container p {
+      padding-top: 20px; }
+
+.requirements {
+  background: url("images/form-bg.jpg");
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.expert-form {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  color: #fff; }
+  .expert-form .container {
+    max-width: 1000px;
+    width: 100%; }
+    .expert-form .container .form1 {
+      width: 600px;
+      display: block;
+      margin: 0 auto;
+      padding-top: 40px; }
+      .expert-form .container .form1 input {
+        border-radius: 0; }
+      .expert-form .container .form1 textarea {
+        resize: none;
+        border-radius: 0;
+        padding: 17px 12px 10px; }
+      .expert-form .container .form1 button {
+        max-width: 414px;
+        width: 100%;
+        font-size: 26px;
+        padding: 12px 0; }
+    .expert-form .container h2 {
+      position: relative;
+      font-size: 42px; }
+      .expert-form .container h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -10px;
+        left: 452px;
+        right: 0; }
+
+footer {
+  background: #59595C;
+  width: 100%;
+  padding: 30px 0 10px;
+  color: #fff;
+  font-size: 12px; }
+  footer .container {
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between; }
+    footer .container .footer-content p {
+      max-width: 600px;
+      width: 100%;
+      line-height: 0.8; }
+    footer .container .logo-ttn {
+      display: flex; }
+      footer .container .logo-ttn img {
+        width: 100px;
+        height: 50px; }
+      footer .container .logo-ttn .footer-content {
+        padding-left: 10px;
+        padding-top: 16px;
+        text-align: right; }
+      footer .container .logo-ttn p {
+        line-height: 0.4; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .container {
+    max-width: 768px;
+    width: 100%; }
+    header .container .navbar-nav {
+      flex-direction: row; }
+      header .container .navbar-nav .nav-link {
+        padding-left: 15px; }
+
+  .topexperts-form .container h1 {
+    font-size: 35px; }
+
+  .testimonials h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #EA0078;
+    width: 65px;
+    top: 0;
+    bottom: 13px;
+    left: 305px;
+    right: 0; }
+  .testimonials iframe {
+    max-width: 768px;
+    width: 100%; }
+  .testimonials .testimonials-pic .testimonial-outer .card1 {
+    width: 125px; }
+  .testimonials .testimonials-pic .testimonial-outer img {
+    border-radius: 50%;
+    border: 4px solid #D9DEDD;
+    width: 65px;
+    height: 65px;
+    margin-right: 15px; }
+
+  .our-clients h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #EA0078;
+    width: 65px;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    right: 0; }
+
+  .expertise h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #EA0078;
+    width: 65px;
+    top: 0;
+    bottom: -7px;
+    left: 271px;
+    right: 0; }
+  .expertise ul li {
+    list-style: none;
+    padding-top: 6px;
+    font-size: 18px;
+    display: flex; }
+
+  .practices {
+    padding: 40px 0 40px;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto; }
+    .practices ul {
+      padding: 0; }
+      .practices ul li {
+        font-size: 13px;
+        display: flex; }
+        .practices ul li img {
+          width: 58px;
+          height: 30px; }
+    .practices .engineering h2 {
+      font-size: 25px; }
+      .practices .engineering h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -7px;
+        left: 0;
+        right: 0; }
+    .practices .agile h2 {
+      font-size: 25px; }
+      .practices .agile h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -7px;
+        left: 0;
+        right: 0; }
+
+  .expert-form .container h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #EA0078;
+    width: 65px;
+    top: 0;
+    bottom: -10px;
+    left: 292px;
+    right: 0; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  header .container {
+    max-width: 768px;
+    width: 100%; }
+    header .container nav ul li {
+      border-bottom: 1px solid #fff;
+      text-align: center; }
+      header .container nav ul li:last-child {
+        border-bottom: none; }
+      header .container nav ul li:nth-child(4) {
+        padding-top: 20px; }
+      header .container nav ul li button, header .topexperts-form .container nav ul li form button, .topexperts-form header .container nav ul li form button, header .topexperts-form .container form nav ul li button, .topexperts-form header .container form nav ul li button, header .expert-form .container nav ul li .form1 button, .expert-form header .container nav ul li .form1 button, header .expert-form .container .form1 nav ul li button, .expert-form header .container .form1 nav ul li button {
+        font-size: 15px;
+        margin-left: 7px; }
+
+  .testimonials iframe {
+    max-width: 768px;
+    width: 100%; }
+
+  .our-clients h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #EA0078;
+    width: 65px;
+    top: 0;
+    bottom: 0;
+    left: 61px;
+    right: 0; }
+
+  .expertise h2 {
+    font-size: 23px; }
+    .expertise h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 0;
+      bottom: -13px;
+      left: 112px;
+      right: 0; }
+  .expertise ul {
+    padding-left: 0; }
+    .expertise ul li {
+      font-size: 16px;
+      display: flex; }
+  .expertise .expertise-content {
+    padding: 20px;
+    display: block;
+    text-align: left;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 20px; }
+    .expertise .expertise-content .left-content {
+      width: 100%; }
+    .expertise .expertise-content .right-content {
+      width: 100%; }
+
+  .practices {
+    padding: 40px 0 40px;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto; }
+    .practices ul li {
+      font-size: 13px; }
+    .practices .engineering h2 {
+      font-size: 20px;
+      text-align: center; }
+      .practices .engineering h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -9px;
+        left: 29px;
+        right: 0; }
+    .practices .agile {
+      margin-top: 16px;
+      padding-left: 15px; }
+      .practices .agile h2 {
+        font-size: 20px;
+        padding-left: 30px; }
+        .practices .agile h2::after {
+          content: "";
+          position: absolute;
+          border-bottom: 5px solid #EA0078;
+          width: 65px;
+          top: 0;
+          bottom: -9px;
+          left: 29px;
+          right: 0; }
+
+  .expert-form {
+    padding: 20px 0; }
+    .expert-form .container .form1 {
+      width: 100%; }
+      .expert-form .container .form1 input {
+        font-size: 14px; }
+      .expert-form .container .form1 textarea {
+        resize: none;
+        border-radius: 0;
+        padding: 0;
+        height: 100px;
+        font-size: 14px; }
+        .expert-form .container .form1 textarea::placeholder {
+          padding: 10px 10px 30px; }
+      .expert-form .container .form1 button {
+        max-width: 300px;
+        width: 100%;
+        font-size: 16px; }
+    .expert-form .container h2 {
+      font-size: 25px; }
+      .expert-form .container h2::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #EA0078;
+        width: 65px;
+        top: 0;
+        bottom: -18px;
+        left: 103px;
+        right: 0; }
+
+  footer {
+    width: 100%;
+    padding: 30px 0 10px;
+    color: #fff;
+    font-size: 12px; }
+    footer .container {
+      max-width: 1250px;
+      display: block; }
+      footer .container .footer-content {
+        margin-bottom: 20px; }
+        footer .container .footer-content p {
+          max-width: 150px;
+          width: 100%;
+          line-height: 1.5;
+          text-align: center;
+          margin: 10px auto; }
+      footer .container .logo-ttn {
+        display: flex; }
+        footer .container .logo-ttn img {
+          width: 100px;
+          height: 50px;
+          display: block;
+          margin: 0 auto; }
+        footer .container .logo-ttn .footer-content {
+          padding-left: 10px;
+          padding-top: 16px;
+          text-align: right; }
+        footer .container .logo-ttn p {
+          line-height: 0.4; }
+
+  .topexperts-form .container h1 {
+    font-size: 23px;
+    text-align: center; }
+  .topexperts-form .container .services img {
+    width: 88px;
+    height: 50px;
+    padding-right: 15px; }
+  .topexperts-form .container form button, .topexperts-form .expert-form .container form .form1 button, .expert-form .topexperts-form .container form .form1 button, .topexperts-form .expert-form .container .form1 form button, .expert-form .topexperts-form .container .form1 form button {
+    background: transparent;
+    padding: 6px 0;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    width: 290px; }
+  .topexperts-form .container form p {
+    color: #4475cf;
+    font-size: 18px;
+    font-weight: bold; }
+
+  .talk {
+    background-image: url("images/talk-bg.jpg"); }
+    .talk h2 {
+      font-size: 27px;
+      padding-bottom: 30px; }
+    .talk button, .talk header .container button, header .container .talk button, .talk .topexperts-form .container form button, .topexperts-form .container form .talk button, .talk .expert-form .container .form1 button, .expert-form .container .form1 .talk button {
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 0;
+      color: #fff;
+      font-size: 20px;
+      padding: 10px 0 10px;
+      width: 220px; }
+      .talk button:hover, .talk .topexperts-form .container form button:hover, .topexperts-form .container form .talk button:hover, .talk .expert-form .container .form1 button:hover, .expert-form .container .form1 .talk button:hover {
+        color: #fff; }
+
+  .testimonials h2 {
+    font-size: 30px; }
+    .testimonials h2::after {
+      content: "";
+      position: absolute;
+      border-bottom: 5px solid #EA0078;
+      width: 65px;
+      top: 0;
+      bottom: 19px;
+      left: 82px;
+      right: 0; }
+  .testimonials iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 200px;
+    width: 100%; }
+  .testimonials .testimonials-pic {
+    flex-direction: column; }
+    .testimonials .testimonials-pic img {
+      border-radius: 50%;
+      border: 4px solid #D9DEDD;
+      width: 60px;
+      height: 60px; }
+    .testimonials .testimonials-pic .testimonial-outer {
+      padding-top: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
